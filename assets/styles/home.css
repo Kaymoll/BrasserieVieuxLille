@@ -1,0 +1,329 @@
+.hero {
+    background: linear-gradient(135deg, #f9f6f0 0%, #f0ead8 100%);
+    padding: 4rem 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    color: #3d2914;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #6b4a32;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(61, 41, 20, 0.15);
+}
+
+/* OUR STORY SECTION */
+.our-story {
+    background-color: #faf8f4;
+}
+
+.story-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.story-text {
+    flex: 2;
+}
+
+.story-image {
+    flex: 1;
+}
+
+.story-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 6px 24px rgba(61, 41, 20, 0.1);
+}
+
+/* FEATURED PRODUCTS SECTION */
+.featured-products {
+    background-color: #f9f6f0;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(61, 41, 20, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(61, 41, 20, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.product-card h3 {
+    color: #3d2914;
+    margin: 1rem 1rem 0.5rem;
+}
+
+.product-card p {
+    margin: 0 1rem;
+    color: #6b4a32;
+    font-size: 0.95rem;
+}
+
+.price {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #8b5a2b;
+    margin: 1rem;
+    text-align: right;
+}
+
+/* MEET THE BREWER SECTION */
+.meet-brewer {
+    background-color: #f4f1eb;
+}
+
+.brewer-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.brewer-image {
+    flex: 1;
+}
+
+.brewer-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 6px 24px rgba(61, 41, 20, 0.1);
+}
+
+.brewer-text {
+    flex: 1.5;
+}
+
+/* RESPONSIVE DESIGN FOR HOMEPAGE */
+@media screen and (max-width: 768px) {
+    .hero-content,
+    .story-content,
+    .brewer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+.hero {
+    background: linear-gradient(135deg, #f9f6f0 0%, #f0ead8 100%);
+    padding: 4rem 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    color: #3d2914;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #6b4a32;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(61, 41, 20, 0.15);
+}
+
+/* OUR STORY SECTION */
+.our-story {
+    background-color: #faf8f4;
+}
+
+.story-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.story-text {
+    flex: 2;
+}
+
+.story-image {
+    flex: 1;
+}
+
+.story-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 6px 24px rgba(61, 41, 20, 0.1);
+}
+
+/* FEATURED PRODUCTS SECTION */
+.featured-products {
+    background-color: #f9f6f0;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(61, 41, 20, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(61, 41, 20, 0.15);
+}
+
+.product-card img {
+    max-width: 100%;
+}
+
+.product-card h3 {
+    color: #3d2914;
+    margin: 1rem 1rem 0.5rem;
+}
+
+.product-card p {
+    margin: 0 1rem;
+    color: #6b4a32;
+    font-size: 0.95rem;
+}
+
+.price {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #8b5a2b;
+    margin: 1rem;
+    text-align: right;
+}
+
+/* MEET THE BREWER SECTION */
+.meet-brewer {
+    background-color: #f4f1eb;
+}
+
+.brewer-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.brewer-image {
+    flex: 1;
+}
+
+.brewer-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 6px 24px rgba(61, 41, 20, 0.1);
+}
+
+.brewer-text {
+    flex: 1.5;
+}
+
+/* RESPONSIVE DESIGN FOR HOMEPAGE */
+@media screen and (max-width: 768px) {
+    .hero-content,
+    .story-content,
+    .brewer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+.hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+}
+
+.commentaire{
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(61, 41, 20, 0.08);
+    padding: 10px;
+}

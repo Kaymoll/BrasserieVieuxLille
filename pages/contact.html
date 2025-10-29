@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Accès - Brasserie du Vieux Lille</title>
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Brasserie du Vieux Lille</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./produits.html" class="nav-link">Nos Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./savoir-faire.html" class="nav-link">Notre Savoir-Faire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact & Accès</h1>
+                <p>Venez nous rencontrer au cœur du Vieux Lille</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <h2>Nos Coordonnées</h2>
+                        
+                        <div class="contact-item">
+                            <h3>📍 Adresse</h3>
+                            <p>Brasserie du Vieux Lille<br>
+                            15 Rue de la Monnaie<br>
+                            59000 Lille, France</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>📞 Téléphone</h3>
+                            <p><a href="tel:+33320556789">03 20 XX XX XX</a></p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>✉️ Email</h3>
+                            <p><a href="mailto:contact@brasserie-vieux-lille.ex">contact@brasserie-vieux-lille.ex</a></p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>🕒 Horaires d'Ouverture</h3>
+                            <div class="opening-hours">
+                                <div class="hours-row">
+                                    <span class="day">Lundi - Mardi</span>
+                                    <span class="hours">Fermé</span>
+                                </div>
+                                <div class="hours-row">
+                                    <span class="day">Mercredi - Vendredi</span>
+                                    <span class="hours">14h00 - 19h00</span>
+                                </div>
+                                <div class="hours-row">
+                                    <span class="day">Samedi</span>
+                                    <span class="hours">10h00 - 19h00</span>
+                                </div>
+                                <div class="hours-row">
+                                    <span class="day">Dimanche</span>
+                                    <span class="hours">10h00 - 17h00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>🏛️ Visites de la Brasserie</h3>
+                            <p><strong>Visites guidées :</strong><br>
+                            Samedi à 11h00 et 15h00<br>
+                            Dimanche à 15h00<br>
+                            <em>Sur réservation uniquement</em></p>
+                            
+                            <p><strong>Portes ouvertes :</strong><br>
+                            Premier samedi de chaque mois<br>
+                            10h00 - 18h00<br>
+                            <em>Entrée libre, dégustation gratuite</em></p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>🚗 Accès & Stationnement</h3>
+                            <p><strong>En voiture :</strong><br>
+                            Sortie A25 - Centre Ville<br>
+                            Parking République à 200m</p>
+                            
+                            <p><strong>En transports :</strong><br>
+                            Métro Ligne 2 - Arrêt Rihour<br>
+                            Bus Ligne 1 - Arrêt Théâtre</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Nous Contacter</h2>
+                        <form id="contactForm" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Sujet *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Choisissez un sujet</option>
+                                    <option value="commande">Commande de bières</option>
+                                    <option value="visite">Réservation visite</option>
+                                    <option value="evenement">Organisation d'événement</option>
+                                    <option value="partenariat">Partenariat commercial</option>
+                                    <option value="presse">Demande presse</option>
+                                    <option value="autre">Autre demande</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre demande..."></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Je souhaite recevoir la newsletter mensuelle de la brasserie</label>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">J'accepte que mes données soient utilisées pour répondre à ma demande *</label>
+                            </div>
+
+                            <button type="submit" class="cta-button">Envoyer le message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carte Google Maps -->
+        <section class="map-section">
+            <div class="container">
+                <h2>Nous Trouver</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.1234567890123!2d3.062985!3d50.6292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d579b103d5e7%3A0x40af13e81646360!2sRue%20de%20la%20Monnaie%2C%2059000%20Lille%2C%20France!5e0!3m2!1sfr!2sfr!4v1234567890123!5m2!1sfr!2sfr"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Localisation Brasserie du Vieux Lille">
+                    </iframe>
+                </div>
+                <p class="map-caption">Au cœur du Vieux Lille, à deux pas de la Grand-Place</p>
+            </div>
+        </section>
+
+        <section class="practical-info">
+            <div class="container">
+                <h2>Informations Pratiques</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>🍺 Boutique</h3>
+                        <p>Vente directe de toutes nos bières<br>
+                        Verres et produits dérivés<br>
+                        Coffrets cadeaux personnalisés</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🎉 Événements</h3>
+                        <p>Organisation de dégustations privées<br>
+                        Séminaires d'entreprise<br>
+                        Anniversaires et événements familiaux</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>♿ Accessibilité</h3>
+                        <p>Brasserie accessible PMR<br>
+                        Parking adapté<br>
+                        Toilettes équipées</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Brasserie du Vieux Lille</h3>
+                    <p><h6>L'authenticité brassicole depuis 1987</h6></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="./produits.html">Nos Produits</a></li>
+                        <li><a href="./savoir-faire.html">Notre Savoir-Faire</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><h6>15 Rue de la Monnaie<br>
+                    59000 Lille, France<br>
+                    Tél: 03 20 XX XX XX</h6></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><h6>&copy; 2025 Brasserie du Vieux Lille. Tous droits réservés.</h6></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            const privacy = document.getElementById('privacy').checked;
+            
+            if (!name || !email || !subject || !message || !privacy) {
+                alert('Veuillez remplir tous les champs obligatoires et accepter les conditions.');
+                return;
+            }
+            
+            // Simulate form submission
+            alert('Pas de back, pas de contact !');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

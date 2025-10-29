@@ -1,0 +1,173 @@
+.brewer-profile {
+    background-color: #faf8f4;
+}
+
+.profile-content {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.profile-image {
+    flex: 1;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(61, 41, 20, 0.1);
+}
+
+.profile-text {
+    flex: 1.5;
+}
+
+.profile-text h3 {
+    color: #8b5a2b;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.profile-intro {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #6b4a32;
+    border-left: 4px solid #8b5a2b;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+}
+
+/* DETAILED STORY */
+.detailed-story {
+    background-color: #f9f6f0;
+}
+
+.story-section {
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(61, 41, 20, 0.05);
+}
+
+/* BREWERY GALLERY */
+.brewery-gallery {
+    background-color: #faf8f4;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(61, 41, 20, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-3px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-item h3 {
+    margin: 1rem 1rem 0.5rem;
+}
+
+.gallery-item p {
+    margin: 0 1rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* COMMITMENTS SECTION */
+.commitments {
+    background-color: #f9f6f0;
+}
+
+.commitments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.commitment-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(61, 41, 20, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.commitment-card:hover {
+    transform: translateY(-3px);
+}
+
+.commitment-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* CTA SECTION */
+.cta-section {
+    background: #4c3219;
+    color: #faf8f4;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: #faf8f4;
+}
+
+.cta-section p {
+    color: #f4f1eb;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-section .secondary-button {
+    border-color: #faf8f4;
+    color: #faf8f4;
+}
+
+.cta-section .secondary-button:hover {
+    background-color: #faf8f4;
+    color: #8b5a2b;
+}
+
+/* RESPONSIVE DESIGN FOR SAVOIR-FAIRE */
+@media screen and (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .gallery-grid,
+    .commitments-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
