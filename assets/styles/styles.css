@@ -114,6 +114,13 @@ section {
     align-items: center;
 }
 
+.shop {
+    border: none;
+    background: transparent;
+    color: #5e3f1f; 
+    cursor: pointer;
+}
+
 .logo {
     display: flex;
     width: 3.7rem;
